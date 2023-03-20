@@ -15,7 +15,7 @@ public class Main {
         int i = new Random().nextInt(0, 2000); //это кидалка случайных чисел!)
         System.out.println("Случайное целое число i = "+i); 
 
-        int n = Integer.toBinaryString(i).length()-1;
+        int n = Integer.toBinaryString(i).length();
         System.out.println("Номер старшего значения бита n =  "+n);
 
         short count = 0;

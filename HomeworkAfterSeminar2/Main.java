@@ -73,11 +73,11 @@ public class Main {
         // System.out.println("to String: " + (end - begin));
 
         // begin = System.currentTimeMillis();
-        // for (int i = 0; i < 10; i++) {
+        // for (int i = 0; i < 10000; i++) {
         //     sum.append(Character.getName(i));
         // }
         // end = System.currentTimeMillis();
-        // System.out.println("to StringBuilder: " + (end - begin) );
+        // System.out.println("to StringBuilder: " + (end - begin) ); //28
 
     }
 

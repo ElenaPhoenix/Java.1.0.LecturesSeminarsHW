@@ -24,27 +24,29 @@ public class Main { // класс - описание того, как долже
 
         //builder.toString() // преобразование из StringBuilder в String
 
-        System.out.println(str.toLowerCase()); //
+        System.out.println(str.toLowerCase()); //создается ссылка, по которой значения String приводятся к нижнему регистру, при этом сам объект String остается неизменным
+        //str=str.toLowerCase() //так можно переписать строку
         System.out.println(str.length());
-        System.out.println("_*".repeat(10));
+        System.out.println("_*".repeat(10)); //строка, состоящая из _* повторяется 10 раз, _* - это анонимный полноценный объект, можем с ним работать как с классом
 
         String a = "d";
         String f = "d";
 
-        System.out.println(str.equals("N"));
+        System.out.println(str.equals("N")); // сравнение по содержимому строки
         //if (str == "N")
-        System.out.println(str.contains("N"));
-        str = "Hello     World ! РџСЂРёРІРµС‚ РњРёСЂ !";
-        System.out.println(str.replace("l", "p"));
-        System.out.println(str.replaceFirst("l", "p"));
-        System.out.println(str.charAt(1));
-        String[] strings = str.split(" ");
-        builder.replace(0, 1, "F");
-        builder.reverse();
-        builder.insert(4, " inserted ");
-        builder.deleteCharAt(6);
-        builder.indexOf("Fd");
-        str = new StringBuilder(str).reverse().toString();
+        System.out.println(str.contains("N")); // есть ли в строке к-л символ
+        str = "Hello     World!";
+        System.out.println(str.replace("l", "p")); // поменять местами символы
+        System.out.println(str.replaceFirst("l", "p")); // замена первого символа
+        System.out.println(str.charAt(1)); // возвращает букву по индексу
+        String[] strings = str.split(" "); // позволяет распилить строку на массив строк по определенному разделителю
+        
+        builder.replace(0, 1, "F"); // в StringBuilder в replace нужно указывать в условии откуда докуда и чем заменить
+        builder.reverse(); // развернуть строку
+        builder.insert(4, " inserted "); //воткнуть ч-л после к-л индекса
+        builder.deleteCharAt(6); // удалить конкретную букву по конкретному индексу
+        builder.indexOf("Fd"); //возвращает индекс строки, которая передается в параметре
+        str = new StringBuilder(str).reverse().toString(); //в строке будет записано развернутое предыдущее состояние строки
 
     }
 }
